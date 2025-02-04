@@ -19,6 +19,9 @@ app.use(errorHandler.notFoundDefault)
 // Global error handler
 app.use(errorHandler.errorDefault)
 
+// Middleware to parse JSON data as part of the body
+app.use(express.json())
+
 
   
   
